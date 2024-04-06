@@ -2,7 +2,7 @@ name: use sonarqube test HTML workds
 on:
  push:
    branches:
-     - dev-branch 
+     - main 
 jobs:
   buil:
    runs-on: self-hosted 
