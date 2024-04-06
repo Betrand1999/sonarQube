@@ -1,4 +1,4 @@
-name: use sonarqube test HTML works ok ok ok
+name: use sonarqube test HTML works ok ok 
 on:
   push:
     branches:
