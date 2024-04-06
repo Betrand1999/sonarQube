@@ -1,15 +1,16 @@
-name: use sonarqube test HTML workds ok ok
+name: use sonarqube test HTML works ok ok ok
 on:
- push:
-   branches:
-     - main 
+  push:
+    branches:
+      - main
+
 jobs:
-  buil:
-   runs-on: self-hosted 
-   steps:
-     - name: checkout repo 
-       uses: actions/checkout@v2 
-     - name: test with sonarqube
-       env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN}}
-       run: sonar-scanner -Dsonar.login=${SONAR_TOKEN}
+  build:
+    runs-on: self-hosted 
+    steps:
+      - name: checkout repo 
+        uses: actions/checkout@v2 
+      - name: test with sonarqube
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: sonar-scanner -Dsonar.login=${SONAR_TOKEN}
