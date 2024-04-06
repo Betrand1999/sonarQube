@@ -1,4 +1,4 @@
-name: use sonarqube test HTML 
+name: use sonarqube test HTML workds
 on:
  push:
    branches:
